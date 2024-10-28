@@ -5,7 +5,7 @@ app = Flask(__name__)
 redis = Redis(host='127.0.0.1', port=6379)
 @app.route('/')
 def helloii():
-    return "Hello World"
+    return "Welcome my ecs project 🥰 🥰 🥰"
 @app.route('/hit')
 def hello():
     redis.incr('hits')
